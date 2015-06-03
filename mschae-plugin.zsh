@@ -15,6 +15,14 @@ export EDITOR=vim
 alias zshconfig="$EDITOR ~/.zshrc"
 alias vimconfig="$EDITOR ~/.vim"
 
+ts() {
+  if [ -n $TMUX ]; then
+    tmux create-session -l $1
+  else
+    tmux switch-session -t $1
+  fi
+}
+
 cf() { cat $1 | pbcopy}
 pf() { pbpaste > $1 }
 
