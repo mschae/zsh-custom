@@ -2,7 +2,7 @@ dev() { cd ~/src/$1; }
 _dev() { _files -W ~/src -/; }
 compdef _dev dev
 
-i() { cd ~/src/$1; }
+i() { cd ~/src/inverse/$1; }
 _i() { _files -W ~/src/inverse -/; }
 compdef _i i
 
