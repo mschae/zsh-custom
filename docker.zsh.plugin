@@ -1,0 +1,7 @@
+alias dm=docker-machine
+alias dl="docker logs -f"
+alias de="docker exec -ti"
+
+denv() {
+  eval $(docker env)
+}

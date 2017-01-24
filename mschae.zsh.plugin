@@ -28,4 +28,6 @@ pf() { pbpaste > $1 }
 
 gcoid() { git branch | grep $1 | xargs git checkout }
 
+alias ec2kill="aws ec2 terminate-instances --region us-west-1 --instance-ids"
+
 DEFAULT_USER="ms2"
